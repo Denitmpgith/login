@@ -18,7 +18,7 @@ nav {
 }
 .jumbotron .jl {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   width: 55vw;
   /* background-color: rgb(90, 120, 239); */
@@ -34,22 +34,24 @@ nav {
 }
 .jumbotron .jl .jlc h1 {
   font-family: "Andala", Arial, Helvetica, sans-serif;
-  color: #dec3d8;
   font-size: 5rem;
+  color: #dec3d8;
   animation: opacity 5s /*infinite*/;
 }
-.jumbotron .jl .jlc .pc p {
-  color: #5ba1bb;
-  text-align: center;
-  animation: text_slide 3s /*infinite*/;
-}
 .jumbotron .jl .jlc p {
+  font-size: 5rem;
   color: #5ba1bb;
   font-size: 1rem;
   line-height: 20px;
   animation: text_slide 3s /*infinite*/;
 }
-
+.jumbotron .jl .jlc .pc p {
+  font-size: 1rem;
+  color: #5ba1bb;
+  width: 40vh;
+  text-align: right;
+  animation: text_slide 3s /*infinite*/;
+}
 .jumbotron .jr {
   display: flex;
   justify-content: center;
@@ -66,12 +68,14 @@ nav {
   border-radius: 25px;
   box-shadow: 0px 0px 5px #dec3d8;
   /* border: 1px solid black; */
-  /* background-color: rgb(255, 150, 176); */
+  background-color: rgb(255, 150, 176, 0.5);
 }
 .jumbotron .jr .form .inputarea {
   width: 250px;
   height: 35px;
   margin: 10px 0px 10px 0px;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  border-radius: 7.5px;
 }
 .jumbotron .jr .form a {
   color: #5ba1bb;
@@ -107,11 +111,17 @@ nav {
   padding: 3px;
   border-radius: 5px;
 }
-
-.jumbotron .jr .form a:hover {
+.jumbotron .jr .form :nth-child(3):hover {
+  background-color: white;
   color: #dec3d8;
 }
-
+.jumbotron .jr .form :nth-child(4):hover {
+  color: #ff0000;
+}
+.jumbotron .jr .form :nth-child(7):hover {
+  background-color: white;
+  color: #dec3d8;
+}
 .footer {
   height: 20vh;
   display: flex;
