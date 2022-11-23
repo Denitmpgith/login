@@ -14,21 +14,26 @@
 <body>
     <!-- menuregister -->
     <div class="mnrna" id="mnrna">
-        <div class="mnrna1">
-            <h1>Register New</h1>
-            <h1>Account</h1>
-            <input type="text" id="rnasname" placeholder="first name">
-            <input type="text" id="rnalname" placeholder="last name">
-            <div class="radio">
-                <input type="radio" id="nraradio" name="jeniskelamin"><label>male</label>
-                <input type="radio" id="nraradio" name="jeniskelamin"><label>female</label>
-            </div>
-            <input type="text" id="rnaadd1" placeholder="address">
-            <input type="email" id="rnaemail" placeholder="email">
-            <input type="password" id="rnapassword" placeholder="pasword for this site">
-            <div class="mnrna2">
-                <a href="#">Confirm</a>
-                <a href="#">Cancel</a>
+        <div class="boxmnrna">
+            <div class="mnrna1">
+                <h1>Register New</h1>
+                <h1>Account</h1>
+                <input class="mnrnainput" for="firstname" type="text" id="rnasname" placeholder="first name">
+                <input class="mnrnainput" for="lastname" type="text" id="rnalname" placeholder="last name">
+                <div class="radio">
+                    <input type="radio" id="nraradio" name="jeniskelamin"><label></label>
+                    <p>male</p>
+                    <input type="radio" id="nraradio" name="jeniskelamin"><label></label>
+                    <p>female</p>
+                </div>
+                <input class="mnrnainput" for="address" type="text" id="rnaadd1" placeholder="address">
+                <input class="mnrnainput" for="email" type="email" id="rnaemail" placeholder="email">
+                <input class="mnrnainput" for="password" type="password" id="rnapassword"
+                    placeholder="pasword for this site">
+                <div class="mnrna2">
+                    <a href="#">Confirm</a>
+                    <a href="#">Cancel</a>
+                </div>
             </div>
         </div>
     </div>
@@ -51,7 +56,7 @@
         <div class="jr">
             <div class="form">
                 <input class="inputarea" type="email" id="femail" placeholder="Email / no phone">
-                <input class="inputarea" type="password" id="fpassword" placeholder="Password for this site">
+                <input class="inputarea" type="password" id="fpassword" placeholder="Password this site">
                 <a href="">Log in</a>
                 <a href="">Forgotten password?</a>
                 <div class="garis"></div>
