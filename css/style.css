@@ -172,7 +172,8 @@ nav {
   }
 }
 @media screen and (max-width: 768px) {
-  .jumbotron .jl .jlc p {
+  .jumbotron .jl .jlc p,
+  .jumbotron .jl .jlc .pc p {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
