@@ -5,7 +5,7 @@
   }
   0% {
     opacity: 0;
-    margin-left: -50px;
+    margin-left: -100px;
   }
 }
 @keyframes opacity {
