@@ -2,7 +2,75 @@
   font-family: "Andala";
   src: url("Andala.tff") format("truetype");
 }
+/* menuregister */
+.mnrna {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255, 0.8);
+  opacity: 0;
+  z-index: 1;
+}
+.mnrna:target {
+  display: flex;
+  opacity: 1;
+}
+.mnrna .mnrna1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #dec3d8;
+  background-color: rgb(222, 195, 216, 0.5);
+  transition: 2s;
+  line-height: 15px;
+}
 
+.mnrna .mnrna1 :nth-child(1) {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.mnrna .mnrna1 :nth-child(2) {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.mnrna .mnrna1 .mnrna2 {
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  /* background-color: aqua; */
+}
+.mnrna .mnrna1 .radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.mnrna .mnrna1 .mnrna2 a {
+  padding: 3px 15px 3px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgb(222, 195, 216);
+  text-decoration: none;
+  color: rgb(91, 161, 187);
+}
+.mnrna .mnrna1 .mnrna2 a :hover {
+  background-color: white;
+}
+
+/* menuregister */
 nav {
   height: 20vh;
   display: flex;
@@ -47,7 +115,7 @@ nav {
 }
 .jumbotron .jl .jlc .pc p {
   font-size: 1rem;
-  color: #5ba1bb;
+  color: hwb(196 36% 27%);
   width: 40vh;
   text-align: right;
   animation: text_slide 3s /*infinite*/;
@@ -68,7 +136,7 @@ nav {
   border-radius: 25px;
   box-shadow: 0px 0px 5px #dec3d8;
   /* border: 1px solid black; */
-  background-color: rgb(255, 150, 176, 0.5);
+  /* background-color: rgb(255, 150, 176, 0.5); */
 }
 .jumbotron .jr .form .inputarea {
   width: 250px;
@@ -76,9 +144,10 @@ nav {
   margin: 10px 0px 10px 0px;
   border: 0.5px solid rgba(0, 0, 0, 0);
   border-radius: 7.5px;
+  background-color: rgb(255, 150, 176, 0.22);
 }
 .jumbotron .jr .form a {
-  color: #5ba1bb;
+  color: rgb(91, 161, 187);
   /* font-size: 1rem; */
   text-decoration: none;
   display: flex;
@@ -87,9 +156,10 @@ nav {
 .jumbotron .jr .form :nth-child(3) {
   font-size: 1.25rem;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-  padding: 3px;
+  padding: 3px 15px 3px 15px;
   border-radius: 5px;
-  margin: 10px 0px 10px 0px;
+  margin: 1px 0px 10px 0px;
+  background-color: rgb(255, 150, 176, 0.2);
 }
 .jumbotron .jr .form :nth-child(4) {
   font-size: 0.75rem;
@@ -108,19 +178,20 @@ nav {
 .jumbotron .jr .form :nth-child(7) {
   font-size: 1.25rem;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-  padding: 3px;
+  padding: 3px 15px 3px 15px;
   border-radius: 5px;
+  background-color: rgb(255, 150, 176, 0.2);
 }
 .jumbotron .jr .form :nth-child(3):hover {
-  background-color: white;
-  color: #dec3d8;
+  background-color: rgb(91, 161, 187);
+  color: rgba(255, 255, 255, 0.5);
 }
 .jumbotron .jr .form :nth-child(4):hover {
   color: #ff0000;
 }
 .jumbotron .jr .form :nth-child(7):hover {
-  background-color: white;
-  color: #dec3d8;
+  background-color: rgb(91, 161, 187);
+  color: rgba(255, 255, 255, 0.5);
 }
 .footer {
   height: 20vh;
